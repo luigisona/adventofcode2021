@@ -1,7 +1,7 @@
 import sys
 
-#text_file = open("input_8_test.txt", "r")
-text_file = open("input_8.txt", "r")
+text_file = open("input_8_test.txt", "r")
+#text_file = open("input_8.txt", "r")
 input_lines = text_file.readlines()
 # example of input list
 # cgdf eagcbf fc adefg eacdb fbedga geafcd efc dacfe fdgaecb | dcefbag dgcf fc daefc
