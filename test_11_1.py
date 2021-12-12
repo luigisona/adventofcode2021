@@ -29,8 +29,8 @@ flash_count = 0
 
 def flash(i,j, rec_count):
     global flash_count
-    global flashed_in_step
-    global oct_matrix
+    #global flashed_in_step
+    #global oct_matrix
 
     flash_count += 1
     flashed_in_step[i][j] = True
