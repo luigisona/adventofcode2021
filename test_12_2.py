@@ -13,7 +13,7 @@ import numpy
 #text_file = open("input_12_test_1.txt", "r")
 #text_file = open("input_12_test_2.txt", "r")
 #text_file = open("input_12_test_3.txt", "r")
-text_file = open("input_12.txt", "r")
+text_file = open("input_day12_ale.txt", "r")
 input_lines = text_file.readlines()
 
 # example
@@ -33,7 +33,6 @@ for adj in input_lines:
      if caves[0] not in adjs and not caves[0] == 'end' and not caves[1] == 'start':
          adjs[caves[0]] = [caves[1]]
      elif not caves[1] == 'start' and not caves[0] == 'end':
-         print(adj)
          adjs[caves[0]].append(caves[1])
      if caves[1] not in adjs and not caves[0] == 'start' and not caves[1] == 'end':
          adjs[caves[1]] = [caves[0]]
@@ -48,7 +47,6 @@ for adj in input_lines:
      else:
          cave_size[caves[1]] = "LOW"
 
-print(adjs)
 
 def noduplowcave(r):
     s = sorted(r)
